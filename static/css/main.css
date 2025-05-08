@@ -1,0 +1,17 @@
+
+ .cover-pic {
+    width:250px;
+    height: 300px;
+ }
+
+.center {
+    text-align: center
+}
+
+.small_profile_pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+
+Next I should do update and delete posts and comments.
