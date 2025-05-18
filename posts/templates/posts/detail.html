@@ -13,16 +13,21 @@
     <div class="col-6 ms-5">
          <h3> {{ post.title }} </h3>
 
-<!--        <span class="fst-italic">-->
-<!--            Authored by-->
-<!--            {% for book_author in book.bookauthor_set.all %}-->
-<!--                {% if forloop.last %}-->
-<!--                    {{ book_author.author.full_name }}-->
-<!--                {% else %}-->
-<!--                    {{ book_author.author.full_name }},-->
-<!--                {% endif %}-->
-<!--            {% endfor %}-->
-<!--        </span>-->
+        <p class="fst-italic">
+            Category:
+            {{ post.category.name }}
+        </p>
+
+        <span class="fst-italic">
+            Authored by:
+            {% for post_author in post.postauthor_set.all %}
+                {% if forloop.last %}
+                    {{ post_author.author.full_name }}
+                {% else %}
+                    {{ post_author.author.full_name }},
+                {% endif %}
+            {% endfor %}
+        </span>
 
 
          <p>{{ post.text }}</p>

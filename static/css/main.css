@@ -1,7 +1,7 @@
 
  .cover-pic {
-    width:250px;
-    height: 300px;
+    width:300px;
+    height: 350px;
  }
 
 .center {
@@ -13,5 +13,5 @@
     height: 100px;
     border-radius: 50%;
 
-
-Next I should do update and delete posts and comments.
+}
+Next I should add tags to base.html and build latest, favorites and popular posts in Home page and last week posts, last month posts. Thats all .

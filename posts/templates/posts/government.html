@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %} Government {% endblock %}
+
+
+{% block content %}
+
+    {% for post in govern %}
+        <div class="row mb-4 ms-4">
+            <div class="col-2">
+                 <img class="cover-pic" src="{{ post.image.url }}">
+            </div>
+
+            <div class="col-6 ms-4">
+                 <a class="cover-pic fs-2" href="{% url 'posts:detail' post.id %}"> {{ post.title }} </a>
+                <p>
+                    {{ post.text|truncatewords:15 }}
+                </p>
+            </div>
+        </div>
+
+    {% endfor %}
+
+
+{% endblock content %}
